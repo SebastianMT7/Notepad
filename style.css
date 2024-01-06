@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    background-image: url(./img/main.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.main {    
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 210px;
+}
+
+.headPosition {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 30%);
+
+}
+
+input {
+    border-color: white;
+    width: 300px;
+    height: 30px;
+    border-style: hidden;
+}
+
+textarea {
+    border-color: white;
+    resize: none;
+    height: 50px;
+    text-wrap: wrap;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgb(230, 229, 229);
+    border-style: solid;
+    border-color: white;
+    border-radius: 7px;
+    margin: 2px 0;
+}
+
+.note {
+    background-image: url(./img/note.png);
+    width: 280px; 
+    min-height: 250px;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    word-break: break-word;
+    background-repeat: no-repeat;
+}
+
+.noteText {
+    padding: 50px 15px;
+    padding-bottom: 15px;
+}
+
+span {
+    white-space: pre-wrap;
+}
+
+.returnIcon {
+    height: 20px;
+    aspect-ratio: 1/1;
+}
+
+.trashIcon {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-right: 15px;
+}
+
+.trashCardIcons {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 15px;
+    padding-bottom: 0;
+}
+
+.trashIcon :hover {
+    cursor: pointer;
+
+}
+
+.trashCardIcons :hover {
+    cursor: pointer;
+}
+
+@media(max-width:655px) {
+
+
+    .note {
+        margin-top: 30px;
+    }
+
+    .main {
+        justify-content: center;
+    }
+}
+
+@media(max-width:365px) {
+
+    input {
+        width: 200px;
+    }
+
+    .note {
+        min-width: 250px;
+
+    }
+
+}
